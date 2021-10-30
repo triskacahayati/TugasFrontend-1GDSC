@@ -6,6 +6,7 @@ function init(){
         let image = document.createElement('img');
         let link = document.createElement('a');
         let rating = document.createElement('p');
+        let line = document.createElement('hr');
 
         image.src = movies[i].gambar;
         nama.innerHTML = movies[i].name;
@@ -18,6 +19,7 @@ function init(){
         // item.appendChild(image);
         item.appendChild(link);
         item.appendChild(rating);
+        item.appendChild
 
         listMovie.appendChild(item);
     }
