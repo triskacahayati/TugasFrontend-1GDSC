@@ -34,14 +34,17 @@ function detail(){
     const content = document.getElementById('content');
     const name = document.createElement('p');
     const desc = document.createElement('p');
+    const image = document.createElement('img');
     const back = document.createElement('a');
 
-    name.innerHTML = movies[ID].name
+    name.innerHTML = movies[ID].name;
+    image.src = movies[ID].gambar;
     desc.innerHTML = movies[ID].deskripsi;
     back.innerHTML = 'Back'
     back.href = 'index.html';
 
     content.appendChild(name);
+    content.appendChild(image);
     content.appendChild(desc);
     content.appendChild(back)
 }
